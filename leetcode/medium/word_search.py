@@ -18,7 +18,7 @@ class Solution:
                         return True
         return False
         
-    def backtrack(self, board, word, i, j, indx, w):
+    def backtrack(self, board, word, i, j, indx, w) -> bool:
         if i < 0 or i >= self.n or j < 0 or j >= self.m: return False
         if board[i][j] != word[indx]: return False              
         if board[i][j] == "*": return False
